@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: radial-gradient(
+    circle,
+    rgb(119, 119, 119) 10%,
+    rgb(236, 236, 236) 100%
+  );
+  color: white;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "canvas canvas"
+    "amount color";
+  justify-items: center;
+  width: 50%;
+  margin: 0 auto;
+  row-gap: 10px;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+canvas {
+  grid-area: canvas;
+  border: 1px solid black;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.amount {
+  grid-area: amount;
+  margin-left: 5%;
+}
+
+.color {
+  grid-area: color;
+  margin-right: 50%;
+}
